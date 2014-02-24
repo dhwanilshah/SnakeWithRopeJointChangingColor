@@ -1,0 +1,491 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		B99E475418BBE62A002D6BD6 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B99E475318BBE62A002D6BD6 /* Foundation.framework */; };
+		B99E475618BBE62A002D6BD6 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B99E475518BBE62A002D6BD6 /* CoreGraphics.framework */; };
+		B99E475818BBE62A002D6BD6 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B99E475718BBE62A002D6BD6 /* UIKit.framework */; };
+		B99E475A18BBE62A002D6BD6 /* SpriteKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B99E475918BBE62A002D6BD6 /* SpriteKit.framework */; };
+		B99E476018BBE62A002D6BD6 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = B99E475E18BBE62A002D6BD6 /* InfoPlist.strings */; };
+		B99E476218BBE62A002D6BD6 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = B99E476118BBE62A002D6BD6 /* main.m */; };
+		B99E476618BBE62A002D6BD6 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = B99E476518BBE62A002D6BD6 /* AppDelegate.m */; };
+		B99E476918BBE62A002D6BD6 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B99E476718BBE62A002D6BD6 /* Main.storyboard */; };
+		B99E476C18BBE62A002D6BD6 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B99E476B18BBE62A002D6BD6 /* ViewController.m */; };
+		B99E476F18BBE62A002D6BD6 /* MyScene.m in Sources */ = {isa = PBXBuildFile; fileRef = B99E476E18BBE62A002D6BD6 /* MyScene.m */; };
+		B99E477118BBE62A002D6BD6 /* Spaceship.png in Resources */ = {isa = PBXBuildFile; fileRef = B99E477018BBE62A002D6BD6 /* Spaceship.png */; };
+		B99E477318BBE62A002D6BD6 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B99E477218BBE62A002D6BD6 /* Images.xcassets */; };
+		B99E477A18BBE62A002D6BD6 /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B99E477918BBE62A002D6BD6 /* XCTest.framework */; };
+		B99E477B18BBE62A002D6BD6 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B99E475318BBE62A002D6BD6 /* Foundation.framework */; };
+		B99E477C18BBE62A002D6BD6 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B99E475718BBE62A002D6BD6 /* UIKit.framework */; };
+		B99E478418BBE62A002D6BD6 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = B99E478218BBE62A002D6BD6 /* InfoPlist.strings */; };
+		B99E478618BBE62A002D6BD6 /* SnakeWithRopeJointChangingColorTests.m in Sources */ = {isa = PBXBuildFile; fileRef = B99E478518BBE62A002D6BD6 /* SnakeWithRopeJointChangingColorTests.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		B99E477D18BBE62A002D6BD6 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = B99E474818BBE62A002D6BD6 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = B99E474F18BBE62A002D6BD6;
+			remoteInfo = SnakeWithRopeJointChangingColor;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		B99E475018BBE62A002D6BD6 /* SnakeWithRopeJointChangingColor.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SnakeWithRopeJointChangingColor.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		B99E475318BBE62A002D6BD6 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		B99E475518BBE62A002D6BD6 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		B99E475718BBE62A002D6BD6 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		B99E475918BBE62A002D6BD6 /* SpriteKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SpriteKit.framework; path = System/Library/Frameworks/SpriteKit.framework; sourceTree = SDKROOT; };
+		B99E475D18BBE62A002D6BD6 /* SnakeWithRopeJointChangingColor-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "SnakeWithRopeJointChangingColor-Info.plist"; sourceTree = "<group>"; };
+		B99E475F18BBE62A002D6BD6 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		B99E476118BBE62A002D6BD6 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		B99E476318BBE62A002D6BD6 /* SnakeWithRopeJointChangingColor-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "SnakeWithRopeJointChangingColor-Prefix.pch"; sourceTree = "<group>"; };
+		B99E476418BBE62A002D6BD6 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		B99E476518BBE62A002D6BD6 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		B99E476818BBE62A002D6BD6 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		B99E476A18BBE62A002D6BD6 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		B99E476B18BBE62A002D6BD6 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		B99E476D18BBE62A002D6BD6 /* MyScene.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MyScene.h; sourceTree = "<group>"; };
+		B99E476E18BBE62A002D6BD6 /* MyScene.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MyScene.m; sourceTree = "<group>"; };
+		B99E477018BBE62A002D6BD6 /* Spaceship.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Spaceship.png; sourceTree = "<group>"; };
+		B99E477218BBE62A002D6BD6 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		B99E477818BBE62A002D6BD6 /* SnakeWithRopeJointChangingColorTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SnakeWithRopeJointChangingColorTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		B99E477918BBE62A002D6BD6 /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
+		B99E478118BBE62A002D6BD6 /* SnakeWithRopeJointChangingColorTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "SnakeWithRopeJointChangingColorTests-Info.plist"; sourceTree = "<group>"; };
+		B99E478318BBE62A002D6BD6 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		B99E478518BBE62A002D6BD6 /* SnakeWithRopeJointChangingColorTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SnakeWithRopeJointChangingColorTests.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		B99E474D18BBE62A002D6BD6 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B99E475618BBE62A002D6BD6 /* CoreGraphics.framework in Frameworks */,
+				B99E475818BBE62A002D6BD6 /* UIKit.framework in Frameworks */,
+				B99E475A18BBE62A002D6BD6 /* SpriteKit.framework in Frameworks */,
+				B99E475418BBE62A002D6BD6 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B99E477518BBE62A002D6BD6 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B99E477A18BBE62A002D6BD6 /* XCTest.framework in Frameworks */,
+				B99E477C18BBE62A002D6BD6 /* UIKit.framework in Frameworks */,
+				B99E477B18BBE62A002D6BD6 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		B99E474718BBE62A002D6BD6 = {
+			isa = PBXGroup;
+			children = (
+				B99E475B18BBE62A002D6BD6 /* SnakeWithRopeJointChangingColor */,
+				B99E477F18BBE62A002D6BD6 /* SnakeWithRopeJointChangingColorTests */,
+				B99E475218BBE62A002D6BD6 /* Frameworks */,
+				B99E475118BBE62A002D6BD6 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		B99E475118BBE62A002D6BD6 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				B99E475018BBE62A002D6BD6 /* SnakeWithRopeJointChangingColor.app */,
+				B99E477818BBE62A002D6BD6 /* SnakeWithRopeJointChangingColorTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		B99E475218BBE62A002D6BD6 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				B99E475318BBE62A002D6BD6 /* Foundation.framework */,
+				B99E475518BBE62A002D6BD6 /* CoreGraphics.framework */,
+				B99E475718BBE62A002D6BD6 /* UIKit.framework */,
+				B99E475918BBE62A002D6BD6 /* SpriteKit.framework */,
+				B99E477918BBE62A002D6BD6 /* XCTest.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		B99E475B18BBE62A002D6BD6 /* SnakeWithRopeJointChangingColor */ = {
+			isa = PBXGroup;
+			children = (
+				B99E476418BBE62A002D6BD6 /* AppDelegate.h */,
+				B99E476518BBE62A002D6BD6 /* AppDelegate.m */,
+				B99E476718BBE62A002D6BD6 /* Main.storyboard */,
+				B99E476A18BBE62A002D6BD6 /* ViewController.h */,
+				B99E476B18BBE62A002D6BD6 /* ViewController.m */,
+				B99E476D18BBE62A002D6BD6 /* MyScene.h */,
+				B99E476E18BBE62A002D6BD6 /* MyScene.m */,
+				B99E477018BBE62A002D6BD6 /* Spaceship.png */,
+				B99E477218BBE62A002D6BD6 /* Images.xcassets */,
+				B99E475C18BBE62A002D6BD6 /* Supporting Files */,
+			);
+			path = SnakeWithRopeJointChangingColor;
+			sourceTree = "<group>";
+		};
+		B99E475C18BBE62A002D6BD6 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				B99E475D18BBE62A002D6BD6 /* SnakeWithRopeJointChangingColor-Info.plist */,
+				B99E475E18BBE62A002D6BD6 /* InfoPlist.strings */,
+				B99E476118BBE62A002D6BD6 /* main.m */,
+				B99E476318BBE62A002D6BD6 /* SnakeWithRopeJointChangingColor-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		B99E477F18BBE62A002D6BD6 /* SnakeWithRopeJointChangingColorTests */ = {
+			isa = PBXGroup;
+			children = (
+				B99E478518BBE62A002D6BD6 /* SnakeWithRopeJointChangingColorTests.m */,
+				B99E478018BBE62A002D6BD6 /* Supporting Files */,
+			);
+			path = SnakeWithRopeJointChangingColorTests;
+			sourceTree = "<group>";
+		};
+		B99E478018BBE62A002D6BD6 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				B99E478118BBE62A002D6BD6 /* SnakeWithRopeJointChangingColorTests-Info.plist */,
+				B99E478218BBE62A002D6BD6 /* InfoPlist.strings */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		B99E474F18BBE62A002D6BD6 /* SnakeWithRopeJointChangingColor */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = B99E478918BBE62A002D6BD6 /* Build configuration list for PBXNativeTarget "SnakeWithRopeJointChangingColor" */;
+			buildPhases = (
+				B99E474C18BBE62A002D6BD6 /* Sources */,
+				B99E474D18BBE62A002D6BD6 /* Frameworks */,
+				B99E474E18BBE62A002D6BD6 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = SnakeWithRopeJointChangingColor;
+			productName = SnakeWithRopeJointChangingColor;
+			productReference = B99E475018BBE62A002D6BD6 /* SnakeWithRopeJointChangingColor.app */;
+			productType = "com.apple.product-type.application";
+		};
+		B99E477718BBE62A002D6BD6 /* SnakeWithRopeJointChangingColorTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = B99E478C18BBE62A002D6BD6 /* Build configuration list for PBXNativeTarget "SnakeWithRopeJointChangingColorTests" */;
+			buildPhases = (
+				B99E477418BBE62A002D6BD6 /* Sources */,
+				B99E477518BBE62A002D6BD6 /* Frameworks */,
+				B99E477618BBE62A002D6BD6 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				B99E477E18BBE62A002D6BD6 /* PBXTargetDependency */,
+			);
+			name = SnakeWithRopeJointChangingColorTests;
+			productName = SnakeWithRopeJointChangingColorTests;
+			productReference = B99E477818BBE62A002D6BD6 /* SnakeWithRopeJointChangingColorTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		B99E474818BBE62A002D6BD6 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0500;
+				ORGANIZATIONNAME = "Dhwanil Shah";
+				TargetAttributes = {
+					B99E477718BBE62A002D6BD6 = {
+						TestTargetID = B99E474F18BBE62A002D6BD6;
+					};
+				};
+			};
+			buildConfigurationList = B99E474B18BBE62A002D6BD6 /* Build configuration list for PBXProject "SnakeWithRopeJointChangingColor" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = B99E474718BBE62A002D6BD6;
+			productRefGroup = B99E475118BBE62A002D6BD6 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				B99E474F18BBE62A002D6BD6 /* SnakeWithRopeJointChangingColor */,
+				B99E477718BBE62A002D6BD6 /* SnakeWithRopeJointChangingColorTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		B99E474E18BBE62A002D6BD6 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B99E476018BBE62A002D6BD6 /* InfoPlist.strings in Resources */,
+				B99E477318BBE62A002D6BD6 /* Images.xcassets in Resources */,
+				B99E477118BBE62A002D6BD6 /* Spaceship.png in Resources */,
+				B99E476918BBE62A002D6BD6 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B99E477618BBE62A002D6BD6 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B99E478418BBE62A002D6BD6 /* InfoPlist.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		B99E474C18BBE62A002D6BD6 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B99E476F18BBE62A002D6BD6 /* MyScene.m in Sources */,
+				B99E476C18BBE62A002D6BD6 /* ViewController.m in Sources */,
+				B99E476618BBE62A002D6BD6 /* AppDelegate.m in Sources */,
+				B99E476218BBE62A002D6BD6 /* main.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B99E477418BBE62A002D6BD6 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B99E478618BBE62A002D6BD6 /* SnakeWithRopeJointChangingColorTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		B99E477E18BBE62A002D6BD6 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = B99E474F18BBE62A002D6BD6 /* SnakeWithRopeJointChangingColor */;
+			targetProxy = B99E477D18BBE62A002D6BD6 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		B99E475E18BBE62A002D6BD6 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				B99E475F18BBE62A002D6BD6 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		B99E476718BBE62A002D6BD6 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				B99E476818BBE62A002D6BD6 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		B99E478218BBE62A002D6BD6 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				B99E478318BBE62A002D6BD6 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		B99E478718BBE62A002D6BD6 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		B99E478818BBE62A002D6BD6 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		B99E478A18BBE62A002D6BD6 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "SnakeWithRopeJointChangingColor/SnakeWithRopeJointChangingColor-Prefix.pch";
+				INFOPLIST_FILE = "SnakeWithRopeJointChangingColor/SnakeWithRopeJointChangingColor-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SPRITEKIT_TEXTURE_ATLAS_OUTPUT = YES;
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		B99E478B18BBE62A002D6BD6 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "SnakeWithRopeJointChangingColor/SnakeWithRopeJointChangingColor-Prefix.pch";
+				INFOPLIST_FILE = "SnakeWithRopeJointChangingColor/SnakeWithRopeJointChangingColor-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SPRITEKIT_TEXTURE_ATLAS_OUTPUT = YES;
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+		B99E478D18BBE62A002D6BD6 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/SnakeWithRopeJointChangingColor.app/SnakeWithRopeJointChangingColor";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "SnakeWithRopeJointChangingColor/SnakeWithRopeJointChangingColor-Prefix.pch";
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = "SnakeWithRopeJointChangingColorTests/SnakeWithRopeJointChangingColorTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Debug;
+		};
+		B99E478E18BBE62A002D6BD6 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/SnakeWithRopeJointChangingColor.app/SnakeWithRopeJointChangingColor";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "SnakeWithRopeJointChangingColor/SnakeWithRopeJointChangingColor-Prefix.pch";
+				INFOPLIST_FILE = "SnakeWithRopeJointChangingColorTests/SnakeWithRopeJointChangingColorTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		B99E474B18BBE62A002D6BD6 /* Build configuration list for PBXProject "SnakeWithRopeJointChangingColor" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B99E478718BBE62A002D6BD6 /* Debug */,
+				B99E478818BBE62A002D6BD6 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		B99E478918BBE62A002D6BD6 /* Build configuration list for PBXNativeTarget "SnakeWithRopeJointChangingColor" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B99E478A18BBE62A002D6BD6 /* Debug */,
+				B99E478B18BBE62A002D6BD6 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		B99E478C18BBE62A002D6BD6 /* Build configuration list for PBXNativeTarget "SnakeWithRopeJointChangingColorTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B99E478D18BBE62A002D6BD6 /* Debug */,
+				B99E478E18BBE62A002D6BD6 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = B99E474818BBE62A002D6BD6 /* Project object */;
+}
