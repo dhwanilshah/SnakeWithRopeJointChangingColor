@@ -23,8 +23,9 @@
 @property SKPhysicsJoint* myRopeJoint2;
 @property SKPhysicsJoint* myRopeJoint3;
 @property SKPhysicsJoint* myRopeJoint4;
-@property SKPhysicsJoint* myRopeJoint5;
-@property SKPhysicsJoint* myRopeJoint6;
+@property SKPhysicsJointPin* myPinJoint5;
+//@property SKPhysicsJoint* myRopeJoint6;
+@property SKPhysicsJointSpring* mySpringJoint6;
 
 @end
 
@@ -59,15 +60,17 @@
     [self.physicsWorld addJoint:_myRopeJoint4];
     
     
-    _myRopeJoint5 = [SKPhysicsJointLimit jointWithBodyA:_mySquare6.physicsBody bodyB:_mySquare7.physicsBody anchorA:_mySquare6.position anchorB:_mySquare7.position];
+    _myPinJoint5 = [SKPhysicsJointPin jointWithBodyA:_mySquare6.physicsBody bodyB:_mySquare7.physicsBody anchor:_mySquare7.position];
     
-    [self.physicsWorld addJoint:_myRopeJoint5];
+    [self.physicsWorld addJoint:_myPinJoint5];
     
     
-    _myRopeJoint6 = [SKPhysicsJointLimit jointWithBodyA:_mySquare7.physicsBody bodyB:_mySquare8.physicsBody anchorA:_mySquare7.position anchorB:_mySquare8.position];
+    //_myRopeJoint6 = [SKPhysicsJointLimit jointWithBodyA:_mySquare7.physicsBody bodyB:_mySquare8.physicsBody anchorA:_mySquare7.position anchorB:_mySquare8.position];
     
-    [self.physicsWorld addJoint:_myRopeJoint6];
+    //[self.physicsWorld addJoint:_myRopeJoint6];
     
+    _mySpringJoint6=[SKPhysicsJointSpring jointWithBodyA:_mySquare7.physicsBody bodyB:_mySquare8.physicsBody anchorA:_mySquare7.position anchorB:_mySquare8.position];
+    [self.physicsWorld addJoint:_mySpringJoint6];
     
     
     
@@ -138,7 +141,7 @@
 -(void) createAction{
     
     
-    SKAction *action = [SKAction rotateByAngle:M_PI duration:5];
+    //SKAction *action = [SKAction rotateByAngle:M_PI duration:5];
     SKAction *color1 = [SKAction colorizeWithColor:[UIColor greenColor] colorBlendFactor:arc4random() duration:4];
     
     [_mySquare1 runAction:[SKAction repeatActionForever:color1]];
@@ -146,30 +149,30 @@
     SKAction *color2 = [SKAction colorizeWithColor:[UIColor colorWithRed:arc4random()%256 green:arc4random()%256 blue:arc4random()%256 alpha:1] colorBlendFactor:1 duration:4];
     
     [_mySquare2 runAction:[SKAction repeatActionForever:color2]];
-    [_mySquare2 runAction:[SKAction repeatActionForever:action]];
+   // [_mySquare2 runAction:[SKAction repeatActionForever:action]];
     
-    SKAction *action2 = [SKAction rotateByAngle:-M_PI duration:1];
+   // SKAction *action2 = [SKAction rotateByAngle:-M_PI duration:1];
     
-    [_mySquare1 runAction:[SKAction repeatActionForever:action2]];
+   // [_mySquare1 runAction:[SKAction repeatActionForever:action2]];
     [_mySquare3 runAction:[SKAction repeatActionForever:color1]];
-    [_mySquare3 runAction:[SKAction repeatActionForever:action2]];
+   // [_mySquare3 runAction:[SKAction repeatActionForever:action2]];
     
     
     [_mySquare4 runAction:[SKAction repeatActionForever:color2]];
-    [_mySquare4 runAction:[SKAction repeatActionForever:action]];
+   // [_mySquare4 runAction:[SKAction repeatActionForever:action]];
     
     [_mySquare5 runAction:[SKAction repeatActionForever:color1]];
-    [_mySquare5 runAction:[SKAction repeatActionForever:action2]];
+    //[_mySquare5 runAction:[SKAction repeatActionForever:action2]];
     
     
     [_mySquare6 runAction:[SKAction repeatActionForever:color2]];
-    [_mySquare6 runAction:[SKAction repeatActionForever:action]];
+    //[_mySquare6 runAction:[SKAction repeatActionForever:action]];
     
     [_mySquare7 runAction:[SKAction repeatActionForever:color1]];
-    [_mySquare7 runAction:[SKAction repeatActionForever:action2]];
+   // [_mySquare7 runAction:[SKAction repeatActionForever:action2]];
     
     [_mySquare8 runAction:[SKAction repeatActionForever:color2]];
-    [_mySquare8 runAction:[SKAction repeatActionForever:action]];
+    //[_mySquare8 runAction:[SKAction repeatActionForever:action]];
 }
 
 -(id)initWithSize:(CGSize)size {
@@ -184,7 +187,7 @@
         [self spawnSquares];
         
         [self activateJointRope];
-        [self makeShelf];
+        //[self makeShelf];
         [self createAction];
         
         
@@ -218,7 +221,7 @@
     for (UITouch *touch in touches) {
         CGPoint location = [touch locationInNode:self];
         [_mySquare1 setPosition:location];
-        [self createAction];
+      [self createAction];
         
         
         
